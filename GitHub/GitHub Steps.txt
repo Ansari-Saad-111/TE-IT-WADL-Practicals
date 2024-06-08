@@ -1,0 +1,29 @@
+Git in ubuntu
+New file add and commit again commands
+
+> git init
+> git add --a
+> git add index.html
+> git commit -m "Message"
+
+Create Token:
+Profile setting 
+Developer setting
+Personal access token
+Token classic
+Generate new token
+Tick all the options
+
+> git push -u origin master
+Enter username and in password enter token
+
+
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PatilRutvik/PracticeAssign.git
+git push -u origin main

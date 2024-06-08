@@ -1,0 +1,33 @@
+Open new folder
+
+Visual (Go to Terminal) 
+in bash (use sudo)
+
+> npm init
+
+> npm install -g express.
+
+new file create -> index.js
+Paste this code ->
+
+
+const express=require('express');
+const app=express();
+app.use(express.static('public'));
+app.listen(4000,()=>{
+console.log("Server Started");
+})
+const port=4000;
+
+
+>npm i express --save
+
+Create public folder
+       -create index.html
+        (write html code)
+
+> node index.js
+
+(display Server started then go to browser)
+
+Type- localhost:4000 port no.

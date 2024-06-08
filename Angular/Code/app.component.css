@@ -1,0 +1,19 @@
+input{
+    height: 15px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 550px;
+}
+ button{
+    margin-left: 700px;
+    height: 50px;
+    width: 150px;
+ }
+ p{
+    text-align: center;
+    padding: 20px;
+ }
+ div{
+    background-color: aqua;
+ }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ecommerce Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <style>
+        /* .col-3 {
+            background-color: gray;
+            height: 1000px;
+        } */
+
+        .nav-item .nav-link.active {
+            color: Blue;
+        }
+
+        .nav-item {
+            padding: 4px;
+        }
+
+        /* Adjust the width of the sidebar for larger screens 
+        The CSS code you provided is a media query that targets screens with a minimum width of 768 pixels (md breakpoint in Bootstrap). It applies specific styles to the .navbar-nav class when the screen size meets or exceeds this breakpoint.
+        Let's break it down:
+        @media (min-width: 768px) {
+            Styles inside this block will be applied when the screen width is 768px or larger 
+        }
+        This is the media query syntax in CSS. It allows you to apply different styles based on certain conditions, such as screen width, height, orientation, or resolution.
+        Inside the media query, we have:
+        .navbar-expand-md .navbar-nav {
+             flex-direction: column;
+        }
+
+        .navbar-expand-md is a Bootstrap class that applies styles for the navigation bar when the screen size is at the "md" breakpoint (768px) or larger. This class is typically used to control the behavior of the navigation bar on different screen sizes.
+        .navbar-nav is a Bootstrap class used for the list of navigation items (links) in the navigation bar.
+        flex-direction: column; is a CSS Flexbox property that changes the direction of the flex items (navigation links) inside the .navbar-nav container. By setting it to column, the navigation links will stack vertically instead of horizontally.
+
+        So, when the screen width is 768 pixels or larger, this media query will target the navigation links (.navbar-nav) inside the expanded navigation bar (.navbar-expand-md) and change their flex-direction to column. This makes the navigation links stack vertically, creating a sidebar-like layout.
+        This media query is commonly used in responsive web design to adjust the layout and behavior of navigation menus or sidebars based on the screen size. In this case, it transforms the horizontal navigation bar into a vertical sidebar layout on larger screens (768px and above), while maintaining a different layout (e.g., a collapsed menu or hamburger menu) for smaller screens.*/
+        @media (min-width: 768px) {
+            .navbar-expand-md .navbar-nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-3">
+            <a class="Logo" href="#"><img src="image/Logo.jpeg" alt="" height="100px"
+                    ></a>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <h4>Home</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Dashboard</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Upload</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Media</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Users</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Payments</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Settings</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Profile</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <h5>Logout</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-9">
+            <nav class="navbar bg-body-light">
+                <div class="container-fluid">
+                    <h4>Add Product</h4>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-6">
+                    <h1>Ecommerce Dashboard</h1>
+                </div>
+                <div class="col-6">
+                    <div class="dropdown" style="padding: 10px;">
+                        <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Maharashtra
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Andra Pradesh</a></li>
+                            <li><a class="dropdown-item" href="#">Tamil Nadu</a></li>
+                            <li><a class="dropdown-item" href="#">Gujrat</a></li>
+                            <li><a class="dropdown-item" href="#">Uttar Pradesh</a></li>
+                            <li><a class="dropdown-item" href="#">Madhya Pradesh</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row container-fluid">
+                <div class="col">
+                    <div class="card text-bg-primary">
+                        <img src="image/blue.png" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Expense</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-success">
+                        <img src="image/green.png" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Income</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <img src="image/Purple.png" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">New Orders</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class=" card">
+                    <img src="image/Graph.png" class="card-img-top" alt="..." height="400px">
+                    <div class="card-body">
+                        <h5 class="card-title">Summary</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quisquam possimus animi, rerum
+                            corporis at inventore, obcaecati nam quasi cumque autem veritatis, dolor esse nesciunt ullam
+                            provident non. Adipisci, esse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
